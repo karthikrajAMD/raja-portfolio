@@ -1,0 +1,139 @@
+.navbarfun {
+  color: green;
+}
+.upinfo {
+  background-color: rgb(13, 150, 236);
+  height: 40px;
+}
+
+.rajapng {
+  width: 350px;
+  /* height: 500px; */
+  object-fit: cover;
+}
+
+#infoabout {
+  display: grid;
+  place-content: center;
+}
+.pinfo {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 25px;
+}
+.who {
+  display: grid;
+  place-content: center;
+  min-height: 60vh;
+  font-family: serif;
+}
+.first-third {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+.second {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.who2 {
+  font-family: sans-serif;
+  font-size: medium;
+}
+.h5info {
+  position: absolute;
+  bottom: 20%;
+  left: 40%;
+  letter-spacing: 3px;
+}
+@media (max-width: 1000px) {
+  .h5info {
+    position: inherit;
+    bottom: 20%;
+    left: 40%;
+    letter-spacing: 3px;
+  }
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+@media (max-width: 900px) {
+  .logo {
+    display: none;
+  }
+}
+.logo1 {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.skillab {
+}
+@media (min-width: 900px) {
+  .logo1 {
+    display: none;
+  }
+}
+.hi {
+  font-size: 30px;
+}
+.nameh5info {
+  color: blue;
+  font-size: 45px;
+  letter-spacing: 2px;
+}
+.allLogo {
+  width: 100px;
+  height: 100px;
+  transition: all, 250ms;
+}
+.complogo {
+  margin-bottom: 50px;
+}
+.skilldisp {
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+}
+.allLogo:hover {
+  width: 150px;
+  height: 150px;
+}
+
+form {
+  background-color: rgba(51, 145, 239, 0.886);
+  color: white;
+  font-weight: bold;
+  /* width: 450px; */
+  padding: 10px;
+}
+label {
+  margin: 10px;
+}
+.cominfo {
+  letter-spacing: 3px;
+  margin: 10px;
+}
+.continfo {
+  position: relative;
+  /* gap: 10px; */
+}
+.conticon {
+  width: 40px;
+  height: 40px;
+  margin: 4px;
+}
+.contlink {
+  position: absolute;
+
+  right: 0;
+}
+@media (max-width: 768px) {
+  .contlink {
+    position: absolute;
+    bottom: 10;
+    right: 0;
+  }
+}
