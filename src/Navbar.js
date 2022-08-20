@@ -125,7 +125,7 @@ const ResponsiveAppBar = () => {
           {/* <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} /> */}
           <img src={logo} alt="logo" className="logo1" />
           <Typography
-            variant="h5"
+            variant="h6"
             noWrap
             component="a"
             href=""
