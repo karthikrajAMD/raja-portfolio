@@ -47,7 +47,7 @@ function Contact() {
                   </label>
                 </div>
                 <div className="comm">
-                  <textarea cols="48" rows="5"></textarea>
+                  <textarea cols="45" rows="5"></textarea>
                 </div>
 
                 <input type="submit" />

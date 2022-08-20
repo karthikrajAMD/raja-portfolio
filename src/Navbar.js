@@ -15,8 +15,8 @@ import mypic2 from "./Images/mypic2.JPG";
 import AdbIcon from "@mui/icons-material/Adb";
 import logo from "./Images/logo1.png";
 import { Link } from "react-router-dom";
-const pages = ["Home", "Skills", "Resume", "About", "Contact"];
-const settings = ["Profile"];
+const pages = ["Home", "Skills", "Resume", "About", "Project"];
+const settings = ["Profile", "Contact"];
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -38,7 +38,7 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="sticky">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
@@ -140,7 +140,7 @@ const ResponsiveAppBar = () => {
               textDecoration: "none",
             }}
           >
-            LOGO
+            Karthik Raja
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (

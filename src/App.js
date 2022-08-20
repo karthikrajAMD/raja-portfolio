@@ -4,6 +4,7 @@ import About from "./All Components/About";
 import Resume from "./All Components/Resume";
 import Home from "./All Components/Home";
 import Skills from "./All Components/Skills";
+import Project from "./All Components/Project";
 import ResponsiveAppBar from "./Navbar";
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/Resume" element={<Resume />} />
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/Project" element={<Project />} />
       </Routes>
     </div>
   );
