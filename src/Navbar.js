@@ -12,7 +12,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import mypic2 from "./Images/mypic2.JPG";
-import AdbIcon from "@mui/icons-material/Adb";
+
 import logo from "./Images/logo1.png";
 import { Link } from "react-router-dom";
 const pages = ["Home", "Skills", "Resume", "About", "Project"];

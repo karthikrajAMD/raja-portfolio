@@ -6,6 +6,7 @@ import Home from "./All Components/Home";
 import Skills from "./All Components/Skills";
 import Project from "./All Components/Project";
 import ResponsiveAppBar from "./Navbar";
+
 function App() {
   return (
     <div className="App">

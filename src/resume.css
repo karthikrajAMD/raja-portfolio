@@ -131,3 +131,38 @@ li {
   width: 70px;
   height: 70px;
 }
+.myresume {
+  width: 1200px;
+  background-color: grey;
+  padding: 2px;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+.containresume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .myresume {
+    width: 900px;
+  }
+}
+@media (max-width: 900px) {
+  .myresume {
+    width: 600px;
+  }
+}
+@media (max-width: 700px) {
+  .myresume {
+    width: 400px;
+    margin-top: 10%;
+  }
+}
+@media (max-width: 500px) {
+  .myresume {
+    width: 350px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+}

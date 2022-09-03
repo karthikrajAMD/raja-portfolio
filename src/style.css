@@ -8,13 +8,21 @@
 
 .rajapng {
   width: 350px;
-  /* height: 500px; */
+
   object-fit: cover;
 }
-
+.containraja {
+  display: flex;
+  justify-content: center;
+}
 #infoabout {
   display: grid;
   place-content: center;
+}
+.hi,
+.h4,
+.h6 {
+  text-align: center;
 }
 .pinfo {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -40,12 +48,7 @@
   font-family: sans-serif;
   font-size: medium;
 }
-.h5info {
-  position: absolute;
-  bottom: 20%;
-  left: 40%;
-  letter-spacing: 3px;
-}
+
 @media (max-width: 1000px) {
   .h5info {
     position: inherit;
@@ -87,7 +90,12 @@
 .allLogo {
   width: 100px;
   height: 100px;
-  transition: all, 250ms;
+  transition: all, 200ms;
+}
+.allLogo:hover {
+  width: 95px;
+  height: 95px;
+  box-shadow: 2px 2px 10px black;
 }
 .complogo {
   margin-bottom: 50px;
@@ -96,10 +104,6 @@
   justify-content: center;
   text-align: center;
   margin-top: 50px;
-}
-.allLogo:hover {
-  width: 150px;
-  height: 150px;
 }
 
 form {
@@ -118,7 +122,6 @@ label {
 }
 .continfo {
   position: relative;
-  /* gap: 10px; */
 }
 .conticon {
   width: 40px;
