@@ -1,0 +1,25 @@
+.mdb-form {
+  display: flex;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 5px;
+}
+.mdb-input {
+  display: flex;
+  align-items: flex-start;
+}
+.contact-form-main {
+  width: 800px;
+}
+.message-contact {
+  width: 206px;
+}
+.contact-button {
+  width: 150px;
+  height: 40px;
+  margin: 0px auto;
+}

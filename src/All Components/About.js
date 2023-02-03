@@ -17,19 +17,21 @@ function About() {
         <div className="who">
           <h1 className="who1">Who am I?</h1>
           <p data-aos="fade-left" className="who2">
-            After my graduation moving on to my career i know coding but don't
-            have enough potential and also due to some reasons i was working in
-            non-technical side for 2 years and now i want to switch over to the
-            technical side so i decided to improve my skills to withstand in my
-            field after my presence over there.
+            Iam from Thoothukudi, TamilNadu. Iam B.E Electronics and
+            Communication graduated fellow. I know coding but don't have enough
+            potential to make career over that so, i done courses after my
+            college to enter IT field but due to pandemic and despite of family
+            situation i worked in a non-technical side for 2 years in my home
+            town but my interest towards Technical side forced me to quit my
+            job.And i decided to further enhance my skills to change my career
+            so, i joined in a reputed center and done my web development course
+            with many small projects and assessments also attended Hackathon and
+            done four projects using complete MERN stack . And now, although iam
+            fresher i have good knowledge on web development.
           </p>
           <p data-aos="fade-right" className="who2">
             I always take complex problem and try to solve them, this help me to
-            get good knowledge in what i learn .I started learning this web
-            development from my own interest and initially i was learning myself
-            and later joined some professional institutes and done my course
-            with many small projects and assessments also attended hackathon.And
-            now even iam a fresher having a good experience on web development.
+            get good knowledge in what i learn.
           </p>
         </div>
       </div>

@@ -19,7 +19,12 @@ function SkillList({ skill }) {
         className="col-4 col-md-3 complogo"
       >
         <img className="allLogo" src={skill.logo} alt={skill.name} />
-        <h6 className="h6">{skill.name}</h6>
+        <h3
+          className="h6 mt-3"
+          style={{ fontSize: "18px", fontWeight: "bold" }}
+        >
+          {skill.name}
+        </h3>
       </div>
     </>
   );

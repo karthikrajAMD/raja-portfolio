@@ -14,11 +14,12 @@ import MenuItem from "@mui/material/MenuItem";
 import mypic2 from "./Images/mypic2.JPG";
 
 import logo from "./Images/logo1.png";
-import { Link } from "react-router-dom";
-const pages = ["Home", "Skills", "Resume", "About", "Project"];
-const settings = ["Profile", "Contact"];
+import { Link, useNavigate } from "react-router-dom";
+const pages = ["Home", "Skills", "About", "Project"];
+const settings = ["Contact"];
 
 const ResponsiveAppBar = () => {
+  const navigate = useNavigate();
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -93,27 +94,12 @@ const ResponsiveAppBar = () => {
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
-                    {console.log(page)}
                     {page !== "Home" ? (
-                      <Link
-                        style={{
-                          textDecoration: "none",
-
-                          color: "black",
-                        }}
-                        to={`/${page}`}
-                      >
+                      <Link className="nav-bar-text-mini" to={`/${page}`}>
                         {page}
                       </Link>
                     ) : (
-                      <Link
-                        style={{
-                          textDecoration: "none",
-
-                          color: "black",
-                        }}
-                        to={`/`}
-                      >
+                      <Link className="nav-bar-text-mini" to={`/`}>
                         {page}
                       </Link>
                     )}
@@ -125,6 +111,7 @@ const ResponsiveAppBar = () => {
           {/* <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} /> */}
           <img src={logo} alt="logo" className="logo1" />
           <Typography
+            className="typo-text"
             variant="h6"
             noWrap
             component="a"
@@ -142,7 +129,12 @@ const ResponsiveAppBar = () => {
           >
             Karthik Raja
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex" },
+            }}
+          >
             {pages.map((page) => (
               <Button
                 key={page}
@@ -150,25 +142,11 @@ const ResponsiveAppBar = () => {
                 sx={{ my: 2, color: "white", display: "block" }}
               >
                 {page !== "Home" ? (
-                  <Link
-                    style={{
-                      textDecoration: "none",
-
-                      color: "White",
-                    }}
-                    to={`/${page}`}
-                  >
+                  <Link className="nav-bar-text" to={`/${page}`}>
                     {page}
                   </Link>
                 ) : (
-                  <Link
-                    style={{
-                      textDecoration: "none",
-
-                      color: "White",
-                    }}
-                    to={`/`}
-                  >
+                  <Link className="nav-bar-text" to={`/`}>
                     {page}
                   </Link>
                 )}
@@ -199,9 +177,15 @@ const ResponsiveAppBar = () => {
               onClose={handleCloseUserMenu}
             >
               {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
+                <MenuItem
+                  key={setting}
+                  style={{ backgroundColor: "#1976d2" }}
+                  onClick={handleCloseUserMenu}
+                >
                   <Typography textAlign="center">
-                    <Link to={`${setting}`}>{setting}</Link>
+                    <Link className="nav-bar-text" to={`${setting}`}>
+                      {setting}
+                    </Link>
                   </Typography>
                 </MenuItem>
               ))}

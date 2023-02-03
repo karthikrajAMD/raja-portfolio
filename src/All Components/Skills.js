@@ -52,14 +52,12 @@ function Skills() {
   return (
     <>
       <div className="container">
-        {/* <div> */}
         <div className="skilldisp row">
-          <h3 className="skillab">I'm Adept at</h3>
+          <h3 className="skillab mb-5">I'm Good at</h3>
           {skills.map((m, i) => (
             <SkillList key={i} skill={m} />
           ))}
         </div>
-        {/* </div> */}
       </div>
     </>
   );
