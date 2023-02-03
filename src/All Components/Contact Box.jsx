@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import env from "../env";
 import axios from "axios";
 import {
@@ -15,25 +15,38 @@ export default function ContactBox() {
   const [email, setEmail] = useState();
   const [subject, setSubject] = useState();
   const [message, setMessage] = useState();
-
+  const [change, setChange] = useState(false);
+  const [but, setBut] = useState(false);
   const sendMail = async () => {
-    const sendFeedback = await axios.post(`${env.API_URL}/contact-mail`, {
-      name,
-      email,
-      subject,
-      message,
-    });
-    if (sendFeedback.data.status === 200) {
-    } else {
-      // toast.error(sendFeddback.data.message);
-      console.log(sendFeedback.data.message);
+    if (name !== "" && change && subject !== "" && message !== "") {
+      setBut(true);
+      const sendFeedback = await axios.post(`${env.API_URL}/contact-mail`, {
+        name,
+        email,
+        subject,
+        message,
+      });
+      console.log(sendFeedback);
+      if (sendFeedback.data.status === 200) {
+        setChange(false);
+        window.location.reload(false);
+
+        setBut(false);
+      } else {
+        console.log(sendFeedback.data.message);
+        setBut(false);
+      }
     }
   };
+  // useEffect(() => {
+  //   console.log("use effect");
+  //   //
+  // }, [change]);
   return (
     <div className="container">
       <div style={{ marginTop: "50px" }} className="contact-form-main">
         <MDBValidation
-          noValidate
+          isValidate
           id="form"
           className="text-center contact-box"
           //   style={{ width: "100%", maxWidth: "300px" }}
@@ -62,14 +75,20 @@ export default function ContactBox() {
             <MDBValidationItem
               className="message-contact"
               invalid
+              // onChange={(e) => console.log(e)}
               feedback="Please provide your email."
             >
               <MDBInput
                 type="email"
                 className="mdb-input"
-                // label="Email address"
+                // onChange={(e) => console.log(e.target.checkValidity())}
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                  if (e.target.checkValidity() === true) {
+                    setChange(true);
+                  }
+                }}
                 v-model="email"
                 // wrapperClass="mb-4"
                 required
@@ -110,19 +129,12 @@ export default function ContactBox() {
               />
             </MDBValidationItem>
           </div>
-
-          {/* <MDBValidationItem feedback="">
-        <MDBCheckbox
-          //   wrapperClass="d-flex justify-content-center"
-          label="Send me copy"
-        />
-      </MDBValidationItem> */}
-
           <MDBBtn
             className="contact-button"
+            disabled={but}
             type="submit"
             color="primary"
-            onClick={() => {
+            onClick={(event) => {
               sendMail();
             }}
             block
