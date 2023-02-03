@@ -39,6 +39,7 @@ function Resume() {
         <button
           type="button"
           className="btn btn-primary mb-5"
+          onClick={() => onButtonClick()}
           style={{
             boxShadow: "5px 4px 10px rgb(2, 128, 255)",
             // backgroundColor: "rgba(51, 145, 239, 0.886)",
