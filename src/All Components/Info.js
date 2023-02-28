@@ -1,6 +1,5 @@
 import "../style.css";
 import { Box } from "@mui/material";
-import Raja from "../Images/Raja1.JPG";
 import Raja1 from "../Images/Raja1.png";
 
 function Info() {

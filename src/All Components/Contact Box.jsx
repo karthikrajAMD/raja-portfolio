@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import env from "../env";
 import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
 import {
   MDBInput,
   MDBCheckbox,
@@ -29,12 +30,16 @@ export default function ContactBox() {
       console.log(sendFeedback);
       if (sendFeedback.data.status === 200) {
         setChange(false);
-        window.location.reload(false);
+        toast.success(sendFeedback.data.message);
+        setTimeout(() => {
+          window.location.reload(false);
+        }, 2000);
 
         setBut(false);
       } else {
         console.log(sendFeedback.data.message);
         setBut(false);
+        toast.error(sendFeedback.data.message);
       }
     }
   };
@@ -143,6 +148,18 @@ export default function ContactBox() {
           </MDBBtn>
         </MDBValidation>
       </div>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </div>
   );
 }

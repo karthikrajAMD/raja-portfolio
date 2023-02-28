@@ -6,6 +6,7 @@ import Home from "./All Components/Home";
 import Skills from "./All Components/Skills";
 import Project from "./All Components/Project";
 import ResponsiveAppBar from "./Navbar";
+import SmallProject from "./All Components/SmallProject";
 import ContactBox from "./All Components/Contact Box";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           {/* <Route path="/Contact" element={<Contact />} /> */}
           <Route path="/contact" element={<ContactBox />} />
           <Route path="/project" element={<Project />} />
+          <Route path="/small_project" element={<SmallProject />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>

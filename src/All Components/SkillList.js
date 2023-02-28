@@ -6,7 +6,7 @@ function SkillList({ skill }) {
   useEffect(() => {
     Aos.init({
       // offset: 200,
-      duration: 1000,
+      duration: 2000,
       easing: "ease",
       delay: 100,
     });
@@ -15,7 +15,7 @@ function SkillList({ skill }) {
     <>
       <div
         data-aos-once="true"
-        data-aos="flip-left"
+        data-aos="fade-up"
         className="col-4 col-md-3 complogo"
       >
         <img className="allLogo" src={skill.logo} alt={skill.name} />

@@ -15,7 +15,7 @@ import mypic2 from "./Images/mypic2.JPG";
 
 import logo from "./Images/logo1.png";
 import { Link, useNavigate } from "react-router-dom";
-const pages = ["Home", "Skills", "About", "Project"];
+const pages = ["Home", "About", "Skills", "Project"];
 const settings = ["Contact"];
 
 const ResponsiveAppBar = () => {
