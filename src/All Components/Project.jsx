@@ -10,7 +10,7 @@ function Project() {
       img: `https://www.pngitem.com/pimgs/m/252-2523878_sales-order-management-order-management-hd-png-download.png`,
       sourceUrl: "https://github.com/karthikrajAMD/order_management-fe",
       descrip:
-        "Used MERN Stack with added features like Authentication (JWT),CRUD operation and REDUX. Also managing the orders like updating the status of the orders and also created with three demo client users who can order the products and redux is used for managing orders in the cart.",
+        "Used MERN Stack with added features like Authentication (JWT),CRUD operation and REDUX. Managing the orders like updating the status of the orders also three demo client users with payment gateway feature who can order the products, and  also used redux to manage orders in the cart.",
     },
     {
       name: "CRM Application",
@@ -18,7 +18,7 @@ function Project() {
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7Vy3h2ix1FBklQWpz3MX9tLGmt7YwymyRNyd4yCz_qD5hG_u-X_NL7NP2BpeyqCkd6EU&usqp=CAU",
       sourceUrl: "https://github.com/karthikrajAMD/CRM-Auth-fe",
       descrip:
-        "Done using complete MERN Stack and mainly focused on Authentication (JWT), Authorization (Admin Control & Permission), CRUD Operations by having relationship between admin, user and manager.",
+        "Done using complete MERN Stack and mainly focused on Authentication (JWT), Authorization (Admin Control & Permission),and particularly socket.io to have chat between users and also CRUD Operations by having relationship between admin, user and manager.",
     },
     {
       name: "Daily Expense Management",
@@ -26,7 +26,7 @@ function Project() {
       img: "https://m.media-amazon.com/images/I/71sQpmgP33L.png",
       sourceUrl: "https://github.com/karthikrajAMD/Daily_Expense-fe",
       descrip:
-        "Using MERN Stack done this project, DEM application helps to manage and monitor our daily expense also used the feature like date range filter and daily track of our expense can be download as pdf and used react-bootstrap and MUI for responsive UI.",
+        "Using MERN Stack this DEM application includes searching,sorting and pagination features which helps to manage and monitor our daily expense also used the feature like date range filter for daily track of our expense and can be download as pdf also designed with responsive UI.",
     },
     {
       name: "Movie gallery with CRUD operation",

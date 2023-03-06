@@ -2,6 +2,8 @@
 
 .project-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: max-content;
   color: rgb(8, 4, 245);
 }
@@ -14,6 +16,12 @@
   justify-content: center;
   align-items: center;
   font-family: "Raleway", Arial, sans-serif;
+  transition: all 0.5s;
+}
+@media (max-width: 900px) {
+  .project-body {
+    gap: 100px;
+  }
 }
 .project-img {
   /* position: relative; */
